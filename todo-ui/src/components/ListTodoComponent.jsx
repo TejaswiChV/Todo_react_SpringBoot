@@ -39,7 +39,7 @@ const ListTodoComponent = () => {
                 </thead>
                 <tbody>
                     {
-                        todo.map(todoItem =>{
+                        todo?.map(todoItem =>{
                             return (
                             <tr key={todoItem.id}>
                                 <td>{ todoItem.id}</td>

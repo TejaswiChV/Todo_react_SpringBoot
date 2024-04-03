@@ -6,6 +6,9 @@ export default defineConfig({
   build: {
     // root: './src',
     outDir: 'build',
+    mimeTypes: {
+      'application/javascript': ['js','jsx']
+    }
   },
   plugins: [react()],
   server:{

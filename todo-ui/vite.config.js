@@ -21,11 +21,12 @@ export default defineConfig({
   optimizeDeps: {
     esbuildOptions: {
       loader: {
-        '.js': 'jsx',
+        '.js': 'js',
+        '.jsx':'jsx'
       },
     },
   },
-  plugins: [react()],
+  plugins: [react(),reactJsx()],
   server:{
     port: 3000
   }

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://TejaswiChV.github.io/Todo_react_SpringBoot",
+  "homepage": "https://TejaswiChV.github.io/Todo_react_SpringBoot/todo-ui",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

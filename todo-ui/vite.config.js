@@ -6,9 +6,24 @@ export default defineConfig({
   build: {
     // root: './src',
     outDir: 'build',
-    mimeTypes: {
-      'application/javascript': ['js','jsx']
-    }
+  },
+  esbuild: {
+    loader: 'jsx',
+  },
+  mimeTypes: {
+    'application/javascript': ['js','jsx']
+  },
+  resolve: {
+    alias: {
+      './runtimeConfig': './runtimeConfig.browser',
+    },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
   },
   plugins: [react()],
   server:{
